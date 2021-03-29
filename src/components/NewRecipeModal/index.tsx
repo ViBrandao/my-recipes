@@ -27,16 +27,11 @@ export function NewRecipeModal({
     event.preventDefault();
 
     await createRecipe({
-      title: 'string',
-      category: 'string',
+      title: title,
+      category: category,
       ingredients: ingredients,
       directions: directions,
     });
-
-    setTitle('');
-    setCategory('Salgado');
-    setDirections([]);
-    setIngredients([]);
 
     handleRequestClose();
   }
